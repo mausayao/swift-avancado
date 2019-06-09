@@ -10,12 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
-   
+    @IBOutlet weak var numValueText: UILabel!
+    private var isFinishType: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 
 
+    @IBAction func calculatorAction(_ sender: UIButton) {
+        isFinishType = true
+    }
+    
+    @IBAction func numButtonPressed(_ sender: UIButton) {
+        
+        if let numberValue = sender.currentTitle {
+            if isFinishType {
+                numValueText.text = numberValue
+                isFinishType = false
+            } else {
+                numValueText.text = numValueText.text! + numberValue
+            }
+        }
+    }
+    
 }
 

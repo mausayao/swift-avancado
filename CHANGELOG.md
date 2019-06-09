@@ -14,3 +14,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2019-06-09
 ### Added
 - Adiconado UI com constraint e stackview
+- Adicionado metodos e acumuladores
+- Adicionado validação ao clicar nos botões de calculos
