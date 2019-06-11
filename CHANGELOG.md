@@ -11,6 +11,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 ### Fixed
 
+## [0.1.1] - 2019-06-10
+### Added
+- Metodo para inveter sinal
+- Metodo para zera o label
+- Metodo para porcetagem
+- Computer propety para validar textLabel
+### fixed
+- Bug de número com varios pontos de casa decimais ex: 9...0.0.0
+
 ## [0.1.0] - 2019-06-09
 ### Added
 - Adiconado UI com constraint e stackview
