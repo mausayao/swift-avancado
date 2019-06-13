@@ -9,9 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var numValueText: UILabel!
     private var isFinishType: Bool = true
+    var calculator = CalculatorLogic()
     
     private var displayValue: Double {
         get {
@@ -30,24 +31,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
     }
-
-
+    
+    
     @IBAction func calculatorAction(_ sender: UIButton) {
         isFinishType = true
-        
+        calculator.setNumber(number: displayValue)
         if let calculatorSymbol = sender.currentTitle {
-            if calculatorSymbol == "+/-" {
-                displayValue = displayValue * -1
-            }
-            
-            if calculatorSymbol == "%" {
-                displayValue = displayValue/100
-            }
-            
-            if calculatorSymbol == "AC" {
-               displayValue = 0
+            if let value = calculator.calculate(symbol: calculatorSymbol) {
+                displayValue = value
             }
         }
+        
         
     }
     
@@ -55,7 +49,7 @@ class ViewController: UIViewController {
         
         if let numberValue = sender.currentTitle {
             if isFinishType {
-                displayValue = Double(numberValue)!
+                numValueText.text = numberValue
                 isFinishType = false
             } else {
                 if numberValue == "." {

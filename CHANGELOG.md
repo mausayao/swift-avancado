@@ -11,6 +11,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 ### Fixed
 
+## [0.2.0] - 2019-06-12
+### Added
+- adicionado metodo para calculo
+- projeto organizado para padrão MVC
+
 ## [0.1.1] - 2019-06-10
 ### Added
 - Metodo para inveter sinal

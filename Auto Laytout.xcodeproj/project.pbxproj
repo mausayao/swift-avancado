@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E989300222B1C65400282E40 /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = E989300122B1C65400282E40 /* CalculatorLogic.swift */; };
 		E98A1DFA228A3E20006134DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A1DF9228A3E20006134DF /* AppDelegate.swift */; };
 		E98A1DFC228A3E20006134DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A1DFB228A3E20006134DF /* ViewController.swift */; };
 		E98A1DFF228A3E20006134DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98A1DFD228A3E20006134DF /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E989300122B1C65400282E40 /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
 		E98A1DF6228A3E20006134DF /* Auto Laytout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto Laytout.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98A1DF9228A3E20006134DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E98A1DFB228A3E20006134DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E9892FFE22B1C53100282E40 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E989300122B1C65400282E40 /* CalculatorLogic.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E9892FFF22B1C53A00282E40 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E98A1DFD228A3E20006134DF /* Main.storyboard */,
+				E98A1E02228A3E21006134DF /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E989300022B1C54200282E40 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				E98A1DF9228A3E20006134DF /* AppDelegate.swift */,
+				E98A1DFB228A3E20006134DF /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		E98A1DED228A3E20006134DF = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +82,10 @@
 		E98A1DF8228A3E20006134DF /* Auto Laytout */ = {
 			isa = PBXGroup;
 			children = (
-				E98A1DF9228A3E20006134DF /* AppDelegate.swift */,
-				E98A1DFB228A3E20006134DF /* ViewController.swift */,
-				E98A1DFD228A3E20006134DF /* Main.storyboard */,
+				E989300022B1C54200282E40 /* controller */,
+				E9892FFF22B1C53A00282E40 /* view */,
+				E9892FFE22B1C53100282E40 /* model */,
 				E98A1E00228A3E21006134DF /* Assets.xcassets */,
-				E98A1E02228A3E21006134DF /* LaunchScreen.storyboard */,
 				E98A1E05228A3E21006134DF /* Info.plist */,
 			);
 			path = "Auto Laytout";
@@ -137,6 +164,7 @@
 			files = (
 				E98A1DFC228A3E20006134DF /* ViewController.swift in Sources */,
 				E98A1DFA228A3E20006134DF /* AppDelegate.swift in Sources */,
+				E989300222B1C65400282E40 /* CalculatorLogic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
